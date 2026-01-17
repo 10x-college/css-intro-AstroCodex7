@@ -1,0 +1,239 @@
+/* -------------------------------------------------
+   Global reset & typography
+   ------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F7;
+}
+
+/* -------------------------------------------------
+   Header / Navigation
+   ------------------------------------------------- */
+.header {
+    width: 100%;
+    background: #F5F5F7;
+    padding: 0.5rem 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background: #F0EDFF;
+    /* purple rectangle */
+    color: #5B47D1;
+    /* same‑color text (as in the screenshot) */
+    font-size: 24px;
+    padding: 0.3rem 0.8rem;
+    line-height: 100%;
+    text-align: center;
+    opacity: 1;
+}
+
+.navigation {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #000000;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.nav-link:hover {
+    color: #ea5f5f;
+}
+
+/* -------------------------------------------------
+   Hero section
+   ------------------------------------------------- */
+.hero {
+    background: url('image.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+/* -------------------------------------------------
+   Posts grid
+   ------------------------------------------------- */
+.posts {
+    max-width: 1240px;
+    margin: 50px auto;
+}
+
+.posts h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+
+.post-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.post-card {
+    flex: 1 1 360px;
+    max-width: 360px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 12px;
+
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 19px 19px 19px;
+}
+
+.post-color {
+    height: 240px;
+    width: 360px;
+    border-radius: 12px 12px 0 0;
+}
+
+
+.purple {
+    background-color: #C7B8FF;
+}
+
+.pink {
+    background-color: #FFB8D8;
+}
+
+.blue {
+    background-color: #B8E0FF;
+}
+
+.green {
+    background-color: #D4FFB8;
+}
+
+.yellow {
+    background-color: #FFE4B8;
+}
+
+.orange {
+    background-color: #FFD4B8;
+}
+
+
+.post-meta {
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+}
+
+.post-title {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.post-text {
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+/* -------------------------------------------------
+   Footer
+   ------------------------------------------------- */
+.footer {
+    color: #ccc;
+    width: 100%;
+    background-color: #252424;
+    padding: 40px 0;
+    height: auto;
+}
+
+.footer-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-about {
+    flex: 1;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.footer-contact {
+    flex: 1 1 200px;
+}
+
+.footer-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin: 0.3rem 0;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* -------------------------------------------------
+   Utility helpers (optional)
+   ------------------------------------------------- */
+a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
