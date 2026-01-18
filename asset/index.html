@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -13,16 +13,18 @@
         <div class="header-container">
             <a href="#" class="logo">TechBlog</a>
             <nav class="navigation">
-                <a href="#" class="nav-link">მთავარი</a>
-                <a href="#" class="nav-link">ბლოგი</a>
-                <a href="#" class="nav-link">კატეგორიები</a>
-                <a href="#" class="nav-link">ჩვენს შესახებ</a>
-                <a href="#" class="nav-link">კონტაქტი</a>
+                <ul>
+                    <li><a href="#" class="nav-link">მთავარი</a></li>
+                    <li><a href="#" class="nav-link">ბლოგი</a></li>
+                    <li><a href="#" class="nav-link">კატეგორიები</a></li>
+                    <li><a href="#" class="nav-link">ჩვენს შესახებ</a></li>
+                    <li><a href="#" class="nav-link">კონტაქტი</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" role="img" aria-label="Tech blog hero banner with technology background">
             <h1 class="hero-title">აღმოაჩინე ტექნოლოგიების სამყარო</h1>
             <p class="hero-subtitle">თანამედროვე ტექნოლოგიები და ინოვაციები ერთ სივრცეში</p>
         </section>
@@ -119,34 +121,44 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-about">
-                <h4 class="footer-title">TechBlog</h4>
-                <p class="footer-text">
-                    თანამედროვე ტექნოლოგიების შესახებ
-                    საინფორმაციო პლატფორმა.
-                    ჩვენ გთავაზობთ უახლეს
-                    სიახლეებს IT სფეროდან.</p>
-            </div>
-            <div class="footer-about">
-                <h4 class="footer-title">კატეგორიები</h4>
-                <ul class="footer-list">
-                    <li>პროგრამირება</li>
-                    <li>დიზაინი</li>
-                    <li>უსაფრთხოება</li>
-                    <li>ხელოვნური ინტელექტი</li>
-                </ul>
+            <div class="footer-about-contact">
+                <div class="footer-about">
+                    <h4 class="footer-title">TechBlog</h4>
+                    <p class="footer-text">
+                        თანამედროვე ტექნოლოგიების შესახებ
+                        საინფორმაციო პლატფორმა.
+                        ჩვენ გთავაზობთ უახლეს
+                        სიახლეებს IT სფეროდან.</p>
+                </div>
+
+
+                <div class="footer-about">
+                    <h4 class="footer-title">კატეგორიები</h4>
+                    <ul class="footer-list">
+                        <li>პროგრამირება</li>
+                        <li>დიზაინი</li>
+                        <li>უსაფრთხოება</li>
+                        <li>ხელოვნური ინტელექტი</li>
+                    </ul>
+                </div>
+
+
             </div>
             <div class="footer-contact">
                 <h4 class="footer-title">კონტაქტი</h4>
-                <p><a href="mailto:info@techblog.ge">Email: info@techblog.ge</a></p>
-                <p><a href="tel:+995 555 123 456">Tel: +995 555 123 456</a></p>
-                <address>Address: Tbilisi, georgia</address>
+                <ul class="footer-list">
+                    <li><a href="mailto:info@techblog.ge">Email: info@techblog.ge</a></li>
+                    <li><a href="tel:+995 555 123 456">Tel: +995 555 123 456</a></li>
+                    <li>
+                        <p><em>Address: Tbilisi, georgia</em></p>
+                    </li>
+                </ul>
+
             </div>
-          
         </div>
-          <div>
-                <p class="footer-bottom">2026 TechBlog. ყველა უფლება დაცულია.</p>
-            </div>
+        <div>
+            <p class="footer-bottom">2026 TechBlog. ყველა უფლება დაცულია.</p>
+        </div>
     </footer>
 </body>
 
